@@ -1,0 +1,103 @@
+xwrited
+=======
+
+The xwrited utility displays write(1) and wall(1) messages as desktop
+notifications. A notification daemon compliant to the freedesktop.org Desktop
+Notification Specification draft needs to be running in order to display the
+notifications.
+
+Build Instructions
+------------------
+
+xwrited requires a POSIX:2004 compatible operating system, it has been tested
+to work on Linux distributions, FreeBSD, DragonFly BSD, NetBSD, and Solaris and
+Illumos-derived distributions.  The following tools and shared libraries are
+required to build xwrited:
+
+- GNU make >= 3.81
+- GNU or BSD install
+- GLib version 2.26 or later
+- the D-Bus GLib bindings for GLib < 2.25.5
+- libutempter on Linux
+
+Rebuilding the man pages additionally requires the xsltproc tool from libxml2.
+
+Before building xwrited check the commented macros in the Makefile for any
+macros you may need to override depending on the used toolchain and operating
+system.
+
+By default, all files will be installed under the "/usr/local" directory, a
+different installation path prefix can be set via the `prefix` macro.  In
+addition, a second path prefix can be specified via the `DESTDIR` macro which
+will be prepended to any path, incuding the `prefix` macro path prefix.  In
+contrast to `prefix`, the path specified via the `DESTDIR` macro will only be
+prepended to paths during installation and not be used for constructing
+internal paths.
+
+The following instructions assume that `make` is GNU make, on some platforms
+it may be installed under a different name or a non-default path.  In order to
+start the build process run `make all`.  After a successful build, run `make
+install` to install the program, any associated data files and the
+documentation.
+
+Previously built binaries, object files, generated data files and
+documentation can be removed by running `make clean`, any additional,
+generated files which are not removed by the `clean` target can be removed by
+running `make clobber`.
+
+Contact
+-------
+
+Please send any feedback, translations or bug reports via email to
+<guido+xwrited@berhoerster.name>.
+
+Bug Reports
+-----------
+
+When sending bug reports, please always mention the exact version of xwrited
+with which the issue occurs as well as the version of the operating system you
+are using and make sure that you provide sufficient information to reproduce
+the issue and include any input, output, any error messages.
+
+In case of build issues, please also specify the implementations and versions
+of the tools and shared libraries used to build the program, in particular the
+compiler.
+
+In case of crashes, please generate a stack trace with a suitable debugger
+such as gdb, lldb, dbx, or debug after a crash has occurred either by
+examining the resulting core file or by running the program from the debugger
+and attach it to the bug report.  In order to generate a meaningful stack
+trace the program as well as any dynamically linked libraries need to be built
+with debugging information, see the documentation of the used compiler for the
+required compiler flags.  If any of the dynamically linked shared libraries do
+not contain debugging information, please either install debugging information
+for these libraries using mechanisms provided by your operating system or
+rebuild the libraries accordingly.  Please refer to the documentation of the
+debugger for detailed instructions on generating backtraces.
+
+License
+-------
+
+Except otherwise noted, all files are Copyright (C) 2014 Guido Berhoerster and
+distributed under the following license terms:
+
+Copyright (C) 2014 Guido Berhoerster <guido+xwrited@berhoerster.name>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

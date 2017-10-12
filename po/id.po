@@ -1,0 +1,43 @@
+# Indonesian translations for xwrited package.
+# Copyright (C) 2014 Guido Berhoerster
+# This file is distributed under the same license as the xwrited package.
+# Guido Berhoerster <guido+xwrited@berhoerster.name>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xwrited 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-04-27 23:04+0200\n"
+"PO-Revision-Date: 2014-04-27 21:01+0200\n"
+"Last-Translator: Guido Berhoerster <guido+xwrited@berhoerster.name>\n"
+"Language-Team: Indonesian\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ASCII\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../data/xwrited.desktop.in.h:1
+msgid "xwrited"
+msgstr "xwrited"
+
+#: ../data/xwrited.desktop.in.h:2
+msgid "Display write and wall messages as desktop notifications"
+msgstr "Tampilkan pesanan write dan wall sebagai notifikasi desktop"
+
+#. show notification
+#: ../main.c:179
+msgid "Message received"
+msgstr "Pesanan diterima"
+
+#: ../main.c:280
+msgid "Show extra debugging information"
+msgstr "Tampilkan informasi debug tambahan"
+
+#: ../main.c:282
+msgid "Print the current version and exit"
+msgstr "Tampilkan versi kini dan keluar"
+
+#: ../main.c:321
+#, c-format
+msgid "xwrited is already running in this session.\n"
+msgstr "xwrited sudah berjalan pada sesi ini.\n"

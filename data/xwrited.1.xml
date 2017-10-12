@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<!--
+
+Copyright (C) 2014 Guido Berhoerster <guido+xwrited@berhoerster.name>
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+"Software"), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+-->
+<refentry xmlns="http://docbook.org/ns/docbook" xml:lang="en">
+  <info>
+    <author>
+      <personname>
+        <firstname>Guido</firstname>
+        <surname>Berhoerster</surname>
+      </personname>
+      <email>guido+xwrited@berhoerster.name</email>
+      <personblurb/>
+    </author>
+    <date>27 April, 2014</date>
+  </info>
+  <refmeta>
+    <refentrytitle>xwrited</refentrytitle>
+    <manvolnum>1</manvolnum>
+    <refmiscinfo class="source"/>
+    <refmiscinfo class="version"/>
+    <refmiscinfo class="manual">User Commands</refmiscinfo>
+  </refmeta>
+  <refnamediv>
+    <refname>xwrited</refname>
+    <refpurpose>display write and wall messages as desktop
+    notifications</refpurpose>
+  </refnamediv>
+  <refsynopsisdiv>
+    <cmdsynopsis>
+      <command>xwrited</command>
+      <arg choice="opt">
+        <option>-d</option>
+      </arg>
+      <arg choice="opt">
+        <option>-h</option>
+      </arg>
+      <arg choice="opt">
+        <option>-V</option>
+      </arg>
+      <arg choice="opt">
+        <option>-?</option>
+      </arg>
+      <arg choice="opt">
+        <option>--debug</option>
+      </arg>
+      <arg choice="opt">
+        <option>--help</option>
+      </arg>
+      <arg choice="opt">
+        <option>--version</option>
+      </arg>
+    </cmdsynopsis>
+  </refsynopsisdiv>
+  <refsect1>
+    <title>Description</title>
+    <para>The <command>xwrited</command> utility displays
+    <citerefentry><refentrytitle>write</refentrytitle><manvolnum>1</manvolnum>
+    </citerefentry> and
+    <citerefentry><refentrytitle>wall</refentrytitle><manvolnum>1</manvolnum>
+    </citerefentry> messages as desktop notifications. A notification daemon
+    compliant to the freedesktop.org Desktop Notification Specification draft
+    needs to be running in order to display the notifications.</para>
+  </refsect1>
+  <refsect1>
+    <title>Options</title>
+    <para>The following options are supported:</para>
+    <variablelist>
+      <varlistentry>
+        <term>
+          <option>-h</option>
+        </term>
+        <term>
+          <option>-?</option>
+        </term>
+        <term>
+          <option>--help</option>
+        </term>
+        <listitem>
+          <para>Print a summary of all command line options and exit.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>
+          <option>-d</option>
+        </term>
+        <term>
+          <option>--debug</option>
+        </term>
+        <listitem>
+          <para>Enable debugging output.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>
+          <option>-V</option>
+        </term>
+        <term>
+          <option>--version</option>
+        </term>
+        <listitem>
+          <para>Print the version number and exit.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+  <refsect1>
+    <title>Exit Status</title>
+    <para>The following exit values are returned:</para>
+    <variablelist>
+      <varlistentry>
+        <term>0</term>
+        <listitem>
+          <para>Command successfully executed.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>&gt; 0</term>
+        <listitem>
+          <para>An error has occured.</para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </refsect1>
+  <refsect1>
+    <title>See Also</title>
+    <para><citerefentry><refentrytitle>write</refentrytitle>
+    <manvolnum>1</manvolnum></citerefentry>,
+    <citerefentry> <refentrytitle>wall</refentrytitle><manvolnum>1</manvolnum>
+    </citerefentry></para>
+  </refsect1>
+  <refsect1>
+    <title>Notes</title>
+    <para>xwrited assumes that messages are encoded in UTF-8 because there is
+    no way for it to determine the character set encoding of the received
+    data.</para>
+  </refsect1>
+</refentry>

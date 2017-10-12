@@ -1,0 +1,45 @@
+# German translations for xwrited package
+# German messages for xwrited.
+# Copyright (C) 2011 Guido Berhoerster.
+# This file is distributed under the same license as the xwrited package.
+# Guido Berhoerster <guido+xwrited@berhoerster.name>, 2011.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: xwrited 1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-05-20 16:48+0200\n"
+"PO-Revision-Date: 2010-07-28 13:00+0200\n"
+"Last-Translator: Guido Berhoerster <guido+xwrited@berhoerster.name>\n"
+"Language-Team: German\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../data/xwrited.desktop.in.h:1
+msgid "xwrited"
+msgstr "xwrited"
+
+#: ../data/xwrited.desktop.in.h:2
+msgid "Display write and wall messages as desktop notifications"
+msgstr "Zeigt write und wall Nachrichten as Desktop-Benachrichtigungen an"
+
+#. show notification
+#: ../main.c:179
+msgid "Message received"
+msgstr "Nachricht erhalten"
+
+#: ../main.c:280
+msgid "Show extra debugging information"
+msgstr "Zusätzliche Debugging-Informationen anzeigen"
+
+#: ../main.c:282
+msgid "Print the current version and exit"
+msgstr "Aktuelle Version zeigen und beenden"
+
+#: ../main.c:321
+#, c-format
+msgid "xwrited is already running in this session.\n"
+msgstr "xwrited läuft bereits in dieser Sitzung.\n"

@@ -1,0 +1,23 @@
+News
+====
+
+xwrited 2 (2015-03-17T00:00:41+01:00)
+-------------------------------------
+
+- Try to prevent messages from being chopped up into multiple notifications
+- Do not print a warning if an empty notification is skipped
+- Display error messages and free errors
+- Improve README file
+- Add NEWS file
+
+xwrited 1 (2014-06-26T13:00:26+02:00)
+-------------------------------------
+
+- Add missing prototype
+- Add Indonesian translation
+- Add manpage
+- Add README file
+- Support FreeBSD > 9.0
+- Make use of GDBus for glib >= 2.25.5
+- Add support for newer glib versions
+- Initial revision

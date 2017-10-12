@@ -1,0 +1,8 @@
+[Desktop Entry]
+Encoding=UTF-8
+_Name=xwrited
+_Comment=Display write and wall messages as desktop notifications
+Exec=xwrited
+Terminal=false
+Type=Application
+Categories=System;Monitor;

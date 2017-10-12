@@ -1,0 +1,6 @@
+data/xwrited.desktop.in
+main.c
+xwrited-debug.c
+xwrited-unique.c
+xwrited-utmp-utempter.c
+xwrited-utmp-utmpx.c

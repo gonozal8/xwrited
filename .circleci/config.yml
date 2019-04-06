@@ -10,6 +10,9 @@ jobs:
           name: Install Development Tools
           command: 'yum -y groupinstall "Development Tools"'
       - run:
+          name: Install Project Build Deps
+          command: 'yum -y install libutempter-devel dbus-glib-devel glib2-devel'
+      - run:
           name: Building Binary Files
           command: 'make'
       - run:

@@ -9,7 +9,7 @@ jobs:
       - run:
           name: Building Binary Files
           command: 'make'
-      - dist:
+      - run:
           name: Building Source Package
           command: 'make dist'
           

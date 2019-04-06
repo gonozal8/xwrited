@@ -7,6 +7,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: Install Development Tools
+          command: 'yum groupinstall "Development Tools"'
+      - run:
           name: Building Binary Files
           command: 'make'
       - run:

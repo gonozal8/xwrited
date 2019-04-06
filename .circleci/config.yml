@@ -11,7 +11,7 @@ jobs:
           command: 'yum -y groupinstall "Development Tools"'
       - run:
           name: Install Project Build Deps
-          command: 'yum -y install libutempter-devel dbus-glib-devel glib2-devel'
+          command: 'yum -y install libutempter-devel dbus-glib-devel glib2-devel libnotify-devel'
       - run:
           name: Building Binary Files
           command: 'make'

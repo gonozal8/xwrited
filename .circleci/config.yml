@@ -1,3 +1,15 @@
- steps:
-      - run: "make"
-      
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: "centos:latest"
+    steps:
+      - checkout
+      - run:
+          name: Building Binary Files
+          command: 'make'
+      - dist:
+          name: Building Source Package
+          command: 'make dist'
+          
